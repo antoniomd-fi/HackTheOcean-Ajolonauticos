@@ -46,6 +46,10 @@ header {
     font-family: 'Lobster' sans-serif;
 }
 
+.nav-bar nav a:hover {
+    background-color: #49D49D;
+    color: #000;
+}
 /*BANNER*/
 
 .img-banner {
