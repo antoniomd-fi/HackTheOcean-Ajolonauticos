@@ -29,9 +29,13 @@ button{
     border-radius: 1.5rem;
     color: #fff;
     font-family: 'lobster', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
 }
 
+button:hover{
+    background-color: #F2F2F2;
+    color: #000000;
+}
 
 @media (max-width: 640px) {
 
