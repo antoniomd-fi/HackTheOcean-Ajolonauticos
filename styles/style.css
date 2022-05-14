@@ -18,12 +18,12 @@ h1{
 
 
 img{
-    width: 533px;
+    max-width: 533px;
     height: 451.48px;
 }
 
 button{
-    width: 300px;
+    max-width: 300px;
     height: 80px;
     background-color: #564946;
     border-radius: 1.5rem;
@@ -32,3 +32,42 @@ button{
     font-size: 45px;
 }
 
+
+@media (max-width: 640px) {
+
+    h1{
+      font-size: 70px;
+      margin:auto;
+    }
+
+    img{
+        width: auto;
+    }
+
+    button{
+        width: auto;
+        font-size: 35px;
+        margin: auto;
+    }
+
+  }
+
+  @media (max-width: 380px) {
+
+    h1{
+      font-size: 65px;
+      margin:auto;
+    }
+
+    img{
+        max-width: 350px;
+        height:auto ;
+    }
+
+    button{
+        width: auto;
+        font-size: 35px;
+        margin: auto;
+    }
+
+  }
