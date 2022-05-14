@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="preload" href="./styles/style.css" as="style">
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <div class="encabzado-logo">
+                <img src="../images/bro.png" alt="water-drop/bro logo">
+            </div>
+            <div class="encabezado-logoT">
+                <img src="../images/Ajolonauticos.png" alt="Logo">
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div>
+                <nav>
+                    <a href="../index.html">INICIO</a>
+                    <a href="">MAPA</a>
+                    <a href="">INFO</a>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <a href="">CONTACTO</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="img-banner">
+            <div class="carrusel">
+
+            </div>
+        </div>
+        <div class="button-banner">
+
+        </div>
+    </section>
+    <div class="pop-up" id="pop-up">
+        <div class="close-button" name="close" onclick="closePopUp ()"><button>X</button></div>
+        <div>
+            <p>Aquí irían los datos obtenidos del API</p>
+        </div>
+    </div>
+    <main>
+        <div class="title">
+            <h1>Costas con daño</h1>
+        </div>
+        <div class="map-description">
+            <p>Formulario de contacto</p>
+        </div>
+        <div class="map-section">
+
+            <form action="#" method="post" class="contact_form">
+				<ul>
+					<li> 
+						<label for="nombre">Nombre:</label>
+						<input type="text" name="nombre" id="nombre" placeholder="Pepe Perez" required title="Coloque su nombre de Pila"/>
+					</li>
+					<li>
+						<label for="email">Email:</label>
+						<input type="text" name="email" id="email" placeholder="Mi_nombre@midominio" required/>
+					</li>
+					<li>
+						<label for="telefono">Telefono:</label>
+						<input type="tel" name="telefono" id="telefono" placeholder="000000000" required/>
+					</li>
+					<li>
+						<label for="website">Website:</label>
+						<input type="url" name="website" id="website" placeholder="miwebsite.com" required/>
+					</li>
+					<li>
+						<label for="mensaje">Mensaje</label>
+						<textarea name="mensaje" id="mensaje" cols="40" rows="6"></textarea>
+					</li>
+					<li>
+						<button class="submit" type="submit">Enviar</button>
+					</li>
+				</ul>
+			</form>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados ©</p>
+        <p>Ajolonaúticos</p>
+        <p>CDMX</p>
+    </footer>
+
+<script>
+    function openPopUp(){
+        document.getElementById("pop-up").style.display="block";
+    }
+    function closePopUp(){
+        document.getElementById("pop-up").style.display="none";
+    }
+</script>
+</body>
+
+</html>

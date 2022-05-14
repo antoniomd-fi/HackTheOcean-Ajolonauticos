@@ -286,3 +286,121 @@ footer p {
 
     
   }
+
+  /*ESTILOS DEL FORMULARIO*/
+
+  h1{
+	text-align: center; 
+	font-size: 1.5em;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #fff;
+	padding: 20px 0; 
+	font-weight: lighter;
+}
+
+.contact_form ul{
+	width: 580px;
+	list-style: none;
+}
+
+.contact_form li{
+	padding: 12px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+
+.contact_form label{
+	color: #555555;
+	display: inline-block;
+	float: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 0.8em;
+	width: 140px;
+	font-weight: bold;
+}
+
+.contact_form input{
+	height: 20px;
+	width: 220px;
+	padding: 5px 8px;
+}
+
+.contact_form textarea{
+	width: 300px;
+	padding: 8px;
+}
+
+.contact_form button{
+	margin-left: 140px; 
+}
+
+/*ESTILOS VISUALES DE LOS ELEMENTOS*/
+
+.contact_form input, .contact_form textarea{
+	border: 1px solid #aaa;
+	box-shadow: 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 2px;
+	color: #888;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+ 	font-size: 0.9em;
+	padding-right: 30px;
+	-moz-transition: padding .25s;
+	-webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.contact_form input:focus, .contact_form textarea:focus{
+	background: #fff;
+	border: 1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+	padding-right: 80px;
+
+}  
+
+
+.contact_form input.rango{
+	border: none;
+	transition: none;
+	height: 5px;
+	padding: 0;
+}
+
+.contact_form input.rango:focus{
+	border: none;
+	transition: none;
+	height: 5px;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+	
+}
+
+/*ESTILOS DE VALIDACION*/
+.contact_form input:required:valid, .contact_form textarea:required:valid{
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+
+
+.contact_form input:required:invalid, .contact_form textarea:required:invalid{
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535;
+}
+
+/*ESTILOS BOTON DE ENVIO*/
+button.submit{
+	padding: 9px 17px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 0.7em;
+	color: #444;
+	border: none;
+	border-radius: 10px;
+}
+
+button.submit:hover{
+	cursor: pointer;
+	color: #3768b9;
+	opacity: 0.7;
+}
+
