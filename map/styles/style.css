@@ -43,18 +43,20 @@ header {
 }
 
 /*BARRA DE NAVEGACIÓN*/
+
 .nav-bar {
     background-color: #03658C;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    padding: 1%;
+    margin-bottom: -50px;
 }
 
 .nav-bar nav {
     display: flex;
     flex-direction: row;
-
+    
 
 }
 
@@ -68,6 +70,8 @@ header {
 
 .nav-bar nav a:hover {
     background-color: #49D49D;
+    padding: 10px 10px;
+    border-radius: 5px;
     color: #000;
 }
 
@@ -94,7 +98,7 @@ header {
     background-image: url("../images/fish2.jpg");
     margin-top: 20px;
     max-width: 1340px;
-    height: 250px;
+    height: 150px;
     border-radius: 10px;
     background-size: cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -137,16 +141,19 @@ main .map-description p {
     padding-left: 5rem;
     text-align: center;
     font-family: sans-serif;
+    margin-top: 0px;
 }
 
 .map-section {
 
-    max-width: 70%;
+    max-width: 80%;
     border-radius: 15px;
     background-color: #84B8D8;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -154,7 +161,6 @@ main .map-description p {
     display: flex;
     align-items: center;
     width: 850px;
-    
 }
 
 .map-svg svg {
@@ -402,5 +408,22 @@ button.submit:hover{
 	cursor: pointer;
 	color: #3768b9;
 	opacity: 0.7;
+}
+
+/*ESTILOS NOSOTROS*/
+.nos{
+	font-size: 1.7em;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	line-height: 1.3em;
+    color: #fff
+    margin-left: 5%;
+}
+
+p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	line-height: 1.3em;
+	color: #fff;
+	margin-bottom: 1.5em;
+    padding: 8px 8px;
 }
 
