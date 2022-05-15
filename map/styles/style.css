@@ -213,6 +213,11 @@ footer p {
     color: #fff;
 }
 
+footer img {
+    width: 20px;
+    padding-right: 10px;
+}
+
 @media (max-width:980px){
     .map-section{
         width: auto;
