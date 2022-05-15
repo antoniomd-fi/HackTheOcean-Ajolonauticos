@@ -41,6 +41,28 @@ header {
         width: auto;
     }
 }
+/*BARRA DE NAVEGACIÓN ADICIONAL-----------------------------------*/
+nav{
+	width: 100%;
+	clear: both;
+    background-color: #03658C;
+}
+
+nav ul{
+	width: 100%;
+	list-style: none;
+}
+
+
+nav  ul li{
+	text-align: center;
+	width: 25%;
+	float: left;
+	border-right: 1px #fff solid;
+	box-sizing: border-box;
+}
+
+/*BARRA DE NAVEGACIÓN ADICIONAL-----------------------------------*/
 
 /*BARRA DE NAVEGACIÓN*/
 
@@ -49,15 +71,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1%;
-    margin-bottom: -50px;
 }
 
 .nav-bar nav {
     display: flex;
     flex-direction: row;
-    
-
 }
 
 .nav-bar nav a {
@@ -96,10 +114,8 @@ header {
 
 .img-banner .carrusel {
     background-image: url("../images/fish2.jpg");
-    margin-top: 20px;
     max-width: 1340px;
     height: 150px;
-    border-radius: 10px;
     background-size: cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
@@ -138,10 +154,14 @@ main .title {
 }
 
 main .map-description p {
-    padding-left: 5rem;
+    padding-left: auto;
     text-align: center;
-    font-family: sans-serif;
-    margin-top: 0px;
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 4em;
+    font-weight: bold;
 }
 
 .map-section {
@@ -246,7 +266,7 @@ footer p {
       border-radius: 20px;
       position:absolute;
       left:450px;
-      top: 800px;
+      top: 600px;
       z-index: 1;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       display: none;
@@ -298,7 +318,7 @@ footer p {
   h1{
 	text-align: center; 
 	font-size: 1.5em;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: 'Lobster' sans-serif;
 	color: #fff;
 	padding: 20px 0; 
 	font-weight: lighter;
@@ -318,7 +338,6 @@ footer p {
 .contact_form label{
 	color: #555555;
 	display: inline-block;
-	float: left;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 0.8em;
 	width: 140px;
@@ -415,8 +434,8 @@ button.submit:hover{
 	font-size: 1.7em;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	line-height: 1.3em;
-    color: #fff
-    margin-left: 5%;
+    color: black;
+    margin-right: 20px;
 }
 
 p{
