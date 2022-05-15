@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/antoniomd-fi/HackTheOcean-Ajolonauticos/issues"
   },
-  "homepage": "https://github.com/antoniomd-fi/HackTheOcean-Ajolonauticos#readme"
+  "homepage": "https://github.com/antoniomd-fi/HackTheOcean-Ajolonauticos#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
