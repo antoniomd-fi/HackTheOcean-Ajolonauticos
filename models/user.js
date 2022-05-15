@@ -17,8 +17,7 @@ const {Schema, model} = require('mongoose');
  });
 
  UserSchema.methods.toJSON= function(){
-     const { __v,password,_id, ...user } = this.toObject();
-     user.uid=_id;
+     const { __v,_id, ...user } = this.toObject();
      return user;
  }
 
