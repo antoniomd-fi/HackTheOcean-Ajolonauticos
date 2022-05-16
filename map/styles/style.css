@@ -305,6 +305,22 @@ footer img {
     color: #000000;
 }
 
+.pop-up .imagen {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pop-up .imagen img{
+
+    border-radius: 10px;
+    border: 1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+}
+
+.subtitleReq{
+    color: #000;
+}
+
 @media (max-width: 1024px) {
     .pop-up{
         left:350px;

@@ -1,10 +1,8 @@
-function openPopUp(){
-    document.getElementById("pop-up").style.display="block";
-}
-function closePopUp(){
-    document.getElementById("pop-up").style.display="none";
-}
 const url = `https://flowing-blowfish-70.hasura.app/api/rest/especies`;
+
+function openPopUp(idByState){
+    document.getElementById("pop-up").style.display="block";
+    var id = idByState
     fetch(url).then((res1) => {
         if (res1.status != "200") {
             console.log(res1);
@@ -15,25 +13,24 @@ const url = `https://flowing-blowfish-70.hasura.app/api/rest/especies`;
     }).then((data) => {
         if (data) {
             console.log(data);
-            var ale = Math.floor(Math.random()*16+0);
-            let animalImg = data.DatosEspecies[ale].img; 
+            let animalImg = data.DatosEspecies[id].img; 
             Imge(animalImg); 
-            let animalname = data.DatosEspecies[ale].nombrecm;
+            let animalname = data.DatosEspecies[id].nombrecm;
             document.getElementById("nombreAnimal").innerHTML = animalname;
 
-            let animalnamesc = data.DatosEspecies[ale].nombresc; 
+            let animalnamesc = data.DatosEspecies[id].nombresc; 
             document.getElementById("nombreCientifico").innerHTML = animalnamesc;
 
-            let animalcat = data.DatosEspecies[ale].categoria;  
+            let animalcat = data.DatosEspecies[id].categoria;  
             document.getElementById("categoria").innerHTML = animalcat;
 
-            let animaldist = data.DatosEspecies[ale].distribucion; 
+            let animaldist = data.DatosEspecies[id].distribucion; 
             document.getElementById("distribucion").innerHTML = animaldist; 
 
-            let animalend = data.DatosEspecies[ale].endemico;  
+            let animalend = data.DatosEspecies[id].endemico;  
             document.getElementById("endemico").innerHTML = animalend;
 
-            let animalinf = data.DatosEspecies[ale].infog;
+            let animalinf = data.DatosEspecies[id].infog;
             document.getElementById("info").innerHTML = animalinf;  
             
         }
@@ -46,3 +43,10 @@ const url = `https://flowing-blowfish-70.hasura.app/api/rest/especies`;
 const animalname = (animalname) =>{
     document.getElementById("nombreAnimal").innerHTML = animalname
 }
+}
+function closePopUp(){
+    document.getElementById("pop-up").style.display="none";
+}
+
+
+    
