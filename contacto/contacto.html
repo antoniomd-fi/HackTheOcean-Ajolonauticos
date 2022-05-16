@@ -8,6 +8,7 @@
     <title>Contacto</title>
     <link rel="preload" href="../map/styles/style.css" as="style">
     <link href="../map/styles/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
         </div>
         <div class="map-section">
 
-            <form action="#" method="post" class="contact_form">
+            <form action="" id="loginForm"  class="contact_form" onsubmit="return false"  method="post" >
 				<ul>
 					<li> 
 						<label for="nombre">Nombre:</label>
@@ -76,7 +77,7 @@
 						<textarea name="mensaje" id="mensaje" cols="40" rows="6"></textarea>
 					</li>
 					<li>
-						<button class="submit" type="submit">Enviar</button>
+						<button class="submit"  onclick="login()" type="submit">Enviar</button>
 					</li>
 				</ul>
 			</form>
@@ -95,6 +96,38 @@
     function closePopUp(){
         document.getElementById("pop-up").style.display="none";
     }
+    function login() {
+
+            let name = document.getElementById("nombre").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("telefono").value;
+            let website= document.getElementById("website").value;
+            let message = document.getElementById("mensaje").value;
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "https://ajofirm.azurewebsites.net/form",
+                contentType: "application/json",
+                data:JSON.stringify({
+                    "name": name,
+                    "email":email,
+                    "phone":phone,
+                    "website":website,
+                    "message":message
+                }),
+                success: function (result) {
+                    console.log("data is :" + result)
+                    if (result.code == 200) {
+                        alerta ("Inicio de sesión exitoso");
+                        window.location.href = "../home/home_page.html";
+                    }else {
+                        alert(result.message)
+                    }
+                }
+            });
+        }
+        
 </script>
 </body>
 
